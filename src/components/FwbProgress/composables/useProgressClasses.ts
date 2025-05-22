@@ -39,10 +39,10 @@ export type UseProgressClassesProps = {
 }
 
 export function useProgressClasses (props: UseProgressClassesProps): {
-  innerClasses: Ref<string>,
-  outerClasses: Ref<string>,
-  outsideLabelClasses: Ref<string>,
-  customColor: Ref<CustomColor | null>,
+  innerClasses: Ref<string>
+  outerClasses: Ref<string>
+  outsideLabelClasses: Ref<string>
+  customColor: Ref<CustomColor | null>
 } {
   const customColor = computed(() => {
     return barColorClasses[props.color.value] ? null : (props.color.value as CustomColor)
