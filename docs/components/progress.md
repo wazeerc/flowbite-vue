@@ -102,3 +102,15 @@ You can also apply color.
 import { FwbProgress } from 'flowbite-vue'
 </script>
 ```
+
+## API
+
+### Props
+| Name           | Values                                                                                | Default   |
+|----------------|---------------------------------------------------------------------------------------|-----------|
+| color          | `default`, `dark`, `green`, `red`, `yellow`, `purple`, `blue`, `indigo`, any hex code | `default` |
+| label          | `string`                                                                              | `''`      |
+| labelPosition  | `inside`, `outside`, `none`                                                           | `none`    |
+| labelProgress  | `boolean`                                                                             | `false`   |
+| progress       | `number` (0-100)                                                                      | `0`       |
+| size           | `sm`, `md`, `lg`, `xl`                                                                | `md`      |
