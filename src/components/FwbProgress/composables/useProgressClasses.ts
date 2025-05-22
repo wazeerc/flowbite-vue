@@ -45,7 +45,7 @@ export function useProgressClasses (props: UseProgressClassesProps): {
   customColor: Ref<CustomColor | null>
 } {
   const customColor = computed(() => {
-    return props.color.value as CustomColor
+    return barColorClasses[props.color.value] ? null : (props.color.value as CustomColor)
   })
   const bindClasses = computed(() => {
     return classNames(
